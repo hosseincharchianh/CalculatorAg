@@ -1,7 +1,12 @@
-<input type="text" placeholder="Enter FirstNumber :">
-<input type="text" placeholder="Operator :">
-<input type="text" placeholder="Enter SecondNumber :">
-<div>
+<div id="calculator">
+    <div id="top">
+        <!-- FN == FirstNumber -->
+        <input id="FN" type="text" placeholder="Enter FirstNumber :">
+        <!-- op == Operator -->
+        <input id="OP" type="text" placeholder="Operator :">
+        <!-- SN == SecondNumber -->
+        <input id="SN" placeholder="Enter SecondNumber :">
+    </div>
     <div>
         <button>AC</button>
         <button>.</button>
@@ -29,6 +34,7 @@
     <div>
         <button>00</button>
         <button>0</button>
-        <button>=</button>
+        <span> <button id="equal">=</button>
+        </span>
     </div>
 </div>
