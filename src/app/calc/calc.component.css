@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 
-#calculator{
+#calculator {
     display: flex;
     flex-wrap: wrap;
     width: 300px;
@@ -12,8 +13,11 @@
     padding: 20px;
     justify-content: center;
     border-radius: 8px;
+    border-left: #fff 2px solid;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
-#calculator div button{
+
+#calculator div button {
     background-color: transparent;
     color: white;
     padding: 20px;
@@ -21,32 +25,64 @@
     width: 60px;
     height: 60px;
     border: 0;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1) , 5px 5px 15px rgba(0, 0, 0, 0.2) ;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 
 }
+
 /* inja man mikham button equal fazaye do ta button ro eshghal kone vali chera nmishe :/ */
-#equal{
+#equal {
     width: 120px;
 }
-#top{
+
+#top {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 70px;
     width: 240px;
     margin-bottom: 50px;
-    }
-#FN{
+}
+
+/* inja mikham borderesh tikeh tikeh besheh vali nemishehhhhhhhhhhhhhh */
+#FN {
     width: 180px;
+    /* float: left; */
 }
-#OP{
+
+#OP {
     width: 60px;
+    font-size: 9px;
+    /* float: right; */
 }
-#SN{
+
+#SN {
     width: 240px;
-    margin: 20px 0 ;
+    margin: 20px 0;
 
 }
-#calculator #top input{
+
+#calculator #top input {
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px white solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 3px;
     padding: 10px;
+}
+
+#del,
+#ac {
+    color: red;
+}
+
+button:hover {
+    transform: translate(1px, -2px);
+    box-shadow: -5px 9px 9px rgba(0, 0, 0, 0.363);
+
+}
+
+input:focus {
+    outline: 0;
 }
