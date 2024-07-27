@@ -1,41 +1,55 @@
+<!-- read readme file first -->
+
+
 <div id="container">
     <div id="calculator">
         <div id="top">
-            <!-- FN == FirstNumber -->
+            <div id="caption">
+                Calculator
+            </div>
+            <!-- FN == FirstNumber
             <input id="FN" type="text" placeholder="Enter FirstNumber :">
-            <!-- op == Operator -->
-            <input id="OP" type="text" placeholder="Operator :">
-            <!-- SN == SecondNumber -->
-            <input id="SN" placeholder="Enter SecondNumber :">
+             op == Operator 
+            <input id="OP" type="text" placeholder="Operator :"> 
+            SN == SecondNumber
+            <input id="SN" placeholder="Enter SecondNumber :"> -->
+            <div id="inputBoxes">
+                <div id="FN-OP">
+                    {{firstNumber}}  {{operator}}
+                </div>
+                <div id="SN">
+                    {{secondNumber}}
+                </div>
+            </div>
         </div>
         <div>
              <button id="ac">AC</button>
-            <button>.</button>
-            <button>/</button>
+            <button (click)="button('.')">.</button>
+            <button (click)="operatorF('/')">/</button>
             <button id="del">⌫</button>
         </div>
         <div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
+            <button (click)="button('7')">7</button>
+            <button (click)="button('8')" >8</button>
+            <button (click)="button('9')">9</button>
+            <button (click)="operatorF('*')">*</button>
         </div>
         <div>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
+            <button (click)="button('4')">4</button>
+            <button (click)="button('5')">5</button>
+            <button (click)="button('6')">6</button>
+            <button (click)="operatorF('-')">-</button>
         </div>
         <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
+            <button (click)="button('1')">1</button>
+            <button (click)="button('2')">2</button>
+            <button (click)="button('3')">3</button>
+            <button (click)="operatorF('+')">+</button>
         </div>
         <div>
-            <button>00</button>
-            <button>0</button>
-            <span> <button id="equal">=</button>
+            <button (click)="button('00')">00</button>
+            <button (click)="button('0')">0</button>
+            <span> <button id="equal" (click)="operatorF('=')">=</button>
             </span>
         </div>
     </div>

@@ -2,8 +2,12 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+} 
+#caption{
+    color: #919191;
+    margin-bottom: 5px;
+    font-size: x-large;    
 }
-
 #calculator {
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +22,9 @@
 }
 
 #calculator div button {
+
+    margin: 2px;
+    cursor: pointer;
     background-color: transparent;
     color: white;
     padding: 20px;
@@ -26,6 +33,8 @@
     height: 60px;
     border: 0;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-left: #fff 0.5px solid;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
 
 }
 
@@ -38,30 +47,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 70px;
+    height: 50px;
     width: 240px;
-    margin-bottom: 50px;
+    margin-bottom:65px;
 }
 
 /* inja mikham borderesh tikeh tikeh besheh vali nemishehhhhhhhhhhhhhh */
-#FN {
+ /* #FN {
     width: 180px;
-    /* float: left; */
-}
+     float: left; 
+} */
 
-#OP {
+ /* #OP {
     width: 60px;
     font-size: 9px;
-    /* float: right; */
-}
+     float: right; 
+}  */
+   #FN-OP{
+    text-align: center;
+    color: #fff;
+} 
 
 #SN {
     width: 240px;
-    margin: 20px 0;
-
+    margin: 10px 0;
+    text-align: center;
+    color: #fff; 
 }
 
-#calculator #top input {
+/* #calculator #top input {
+    cursor: pointer;
     text-align: center;
     color: #fff;
     background: transparent;
@@ -70,7 +85,8 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 3px;
     padding: 10px;
-}
+      box-shadow: 1px 1px 1px 1px  rgb(126, 126, 126); 
+} */
 
 #del,
 #ac {
@@ -78,11 +94,20 @@
 }
 
 button:hover {
-    transform: translate(1px, -2px);
+    transform: translate(2px, -3px);
     box-shadow: -5px 9px 9px rgba(0, 0, 0, 0.363);
 
 }
 
-input:focus {
+ input:focus {
     outline: 0;
+    animation-name: border;
+    animation-duration: 3250ms;
+    border-radius: 5px;
 }
+@keyframes border {
+    0%   {border-top:1px rgb(255, 255, 255) solid}
+    25%  {border-right:1px rgb(255, 255, 255) solid}
+    50%  {border-bottom:1px rgb(255, 255, 255) solid}
+    100% {border-left:1px rgb(255, 255, 255) solid}
+  } 
