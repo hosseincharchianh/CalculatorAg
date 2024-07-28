@@ -14,20 +14,23 @@
             SN == SecondNumber
             <input id="SN" placeholder="Enter SecondNumber :"> -->
             <div id="inputBoxes">
-                <div id="FN-OP">
-                    {{firstNumber}}  {{operator}}
-                </div>
                 <div id="SN">
-                    {{secondNumber}}
+                    {{secondNumber}} {{operator}}
+                </div>
+                <div id="FN">
+                    {{firstNumber}}
                 </div>
             </div>
         </div>
         <div>
-             <button id="ac">AC</button>
+             <button id="ac"(click)="ac()">AC</button>
             <button (click)="button('.')">.</button>
             <button (click)="operatorF('/')">/</button>
-            <button id="del">⌫</button>
+            <!-- inja mikham ham mousedown kar koneh ham click vali chera faghat mousedown kar mikoneh  -->
+            <button id="del"  (click)="del()">⌫</button>
+            <!-- (mousedown)="delAll()" -->
         </div>
+        
         <div>
             <button (click)="button('7')">7</button>
             <button (click)="button('8')" >8</button>
@@ -49,7 +52,7 @@
         <div>
             <button (click)="button('00')">00</button>
             <button (click)="button('0')">0</button>
-            <span> <button id="equal" (click)="operatorF('=')">=</button>
+            <span> <button id="equal" (click)="equal()">=</button>
             </span>
         </div>
     </div>

@@ -3,6 +3,11 @@
     box-sizing: border-box;
     padding: 0;
 } 
+#caption:hover{
+    color: #fff;
+    transition: 500ms linear;
+    
+}
 #caption{
     color: #919191;
     margin-bottom: 5px;
@@ -22,7 +27,7 @@
 }
 
 #calculator div button {
-
+    
     margin: 2px;
     cursor: pointer;
     background-color: transparent;
@@ -35,17 +40,18 @@
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-left: #fff 0.5px solid;
     border-bottom: 0.5px solid rgb(255, 255, 255);
-
+    
 }
 
 /* inja man mikham button equal fazaye do ta button ro eshghal kone vali chera nmishe :/ */
 #equal {
-    width: 120px;
+    width: 180px;
 }
+
 
 #top {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap ;
     justify-content: center;
     height: 50px;
     width: 240px;
@@ -53,61 +59,68 @@
 }
 
 /* inja mikham borderesh tikeh tikeh besheh vali nemishehhhhhhhhhhhhhh */
- /* #FN {
+/* #FN {
     width: 180px;
-     float: left; 
-} */
-
- /* #OP {
-    width: 60px;
-    font-size: 9px;
-     float: right; 
-}  */
-   #FN-OP{
-    text-align: center;
-    color: #fff;
-} 
-
-#SN {
-    width: 240px;
-    margin: 10px 0;
-    text-align: center;
-    color: #fff; 
-}
-
-/* #calculator #top input {
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-    background: transparent;
-    border: 0;
-    border-bottom: 1px white solid;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 3px;
-    padding: 10px;
-      box-shadow: 1px 1px 1px 1px  rgb(126, 126, 126); 
-} */
-
-#del,
-#ac {
-    color: red;
-}
-
-button:hover {
-    transform: translate(2px, -3px);
-    box-shadow: -5px 9px 9px rgba(0, 0, 0, 0.363);
-
-}
-
- input:focus {
-    outline: 0;
-    animation-name: border;
-    animation-duration: 3250ms;
-    border-radius: 5px;
-}
-@keyframes border {
-    0%   {border-top:1px rgb(255, 255, 255) solid}
-    25%  {border-right:1px rgb(255, 255, 255) solid}
-    50%  {border-bottom:1px rgb(255, 255, 255) solid}
-    100% {border-left:1px rgb(255, 255, 255) solid}
-  } 
+    float: left; 
+    } */
+    
+    /* #OP {
+        width: 60px;
+        font-size: 9px;
+        float: right; 
+        }  */
+        #FN{
+            text-align: center;
+            color: #fff;
+            border-bottom: 1px white solid;
+        } 
+        
+        #SN {
+            width: 240px;
+            margin: 10px 0;
+            text-align: center;
+            color: #ffffff; 
+            width: 180px;
+            float: left;
+            border-bottom: 1px white solid;
+            
+        }
+        
+        
+        /* #calculator #top input {
+            cursor: pointer;
+            text-align: center;
+            color: #fff;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px white solid;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 3px;
+            padding: 10px;
+            box-shadow: 1px 1px 1px 1px  rgb(126, 126, 126); 
+            } */
+            
+            #del,
+            #ac {
+                color: red;
+            }
+            
+            button:hover {
+                transform: translate(2px, -3px);
+                box-shadow: -5px 9px 9px rgba(0, 0, 0, 0.363);
+                transition: 185ms linear;
+                
+            }
+            
+            /* input:focus {
+                outline: 0;
+                animation-name: border;
+                animation-duration: 3250ms;
+                border-radius: 5px;
+            } */
+            /* @keyframes border {
+                0%   {border-top:1px rgb(255, 255, 255) solid}
+                25%  {border-right:1px rgb(255, 255, 255) solid}
+                50%  {border-bottom:1px rgb(255, 255, 255) solid}
+                100% {border-left:1px rgb(255, 255, 255) solid}
+            }  */
